@@ -1,0 +1,676 @@
+[2023-01-25 10:00:16:443][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 14908 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 10:00:16:449][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 10:00:16:478][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 10:00:16:478][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 10:00:16:478][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 10:00:17:1295][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 10:00:17:1301][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 10:00:17:1302][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 10:00:17:1302][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 10:00:17:1350][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 10:00:17:1350][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+[2023-01-25 10:00:17:1678][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@362ea77f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ec46023, org.springframework.security.web.context.SecurityContextPersistenceFilter@593aeca5, org.springframework.security.web.header.HeaderWriterFilter@af8ecb4, org.springframework.web.filter.CorsFilter@78f8c364, org.springframework.security.web.authentication.logout.LogoutFilter@3d2a04ce, com.uni.reactpro.jwt.JwtFilter@71cd6fd5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@391a8abd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@512ec991, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321b2bcc, org.springframework.security.web.session.SessionManagementFilter@133a1334, org.springframework.security.web.access.ExceptionTranslationFilter@3c579037, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c9fea45]
+[2023-01-25 10:00:17:1683][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 10:00:17:1683][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 10:00:18:1860][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 10:00:18:1871][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 10:00:18:1883][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 10:00:18:1895][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.752 seconds (JVM running for 2.318)
+[2023-01-25 10:00:29:13367][http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 10:00:29:13367][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 10:00:29:13368][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 10:00:29:13378][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 10:00:29:13378][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 10:00:29:13457][http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 10:00:29:13613][http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 10:00:29:13626][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 10:00:29:13626][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='admin', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 10:00:30:13834][http-nio-8090-exec-2] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 10:00:30:13834][http-nio-8090-exec-2] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_ADMIN
+[2023-01-25 10:00:30:13868][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='관리자', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlsiUk9MRV9BRE1JTiJdLCJleHAiOjE2NzQ2MTAyMzB9.Mmm0kLBHnDys3_tDSdD0iVHP2-gqSEhYRIwUt4qTv0iE0nBI3zOLMuS-K0Nx36BTZ6c2n0FxIgfMKUWhXrR3gQ', accessTokenExpiresIn=1674610230104}
+[2023-01-25 10:00:30:13871][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 10:00:39:22993][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 10:00:39:22994][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 10:00:39:22998][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectProductListWithPaging : 1
+[2023-01-25 10:00:39:23000][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal Start ===================================
+[2023-01-25 10:00:39:23005][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal End ===================================
+[2023-01-25 10:00:39:23011][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectCriteria : SelectCriteria [pageNo=1, totalCount=21, limit=10, buttonAmount=5, maxPage=3, startPage=1, endPage=3, startRow=1, endRow=10]
+[2023-01-25 10:00:39:23011][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPaging Start ===================================
+[2023-01-25 10:00:39:23019][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPaging End ===================================
+[2023-01-25 10:01:19:63500][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 10:01:19:63501][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlsiUk9MRV9BRE1JTiJdLCJleHAiOjE2NzQxOTM2NDh9.59R85ZjYLhisew0DdixdL3wDPPa-35otfPncHitsl8C139TZIJLWcNxqsJP5TgiFHOXR7uaU9XLfyOaG-gYFig
+[2023-01-25 10:01:19:63527][http-nio-8090-exec-4] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] 만료된 JWT 토큰입니다.
+[2023-01-25 10:01:37:81499][http-nio-8090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 10:01:37:81500][http-nio-8090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlsiUk9MRV9BRE1JTiJdLCJleHAiOjE2NzQ2MTAyMzB9.Mmm0kLBHnDys3_tDSdD0iVHP2-gqSEhYRIwUt4qTv0iE0nBI3zOLMuS-K0Nx36BTZ6c2n0FxIgfMKUWhXrR3gQ
+[2023-01-25 10:01:37:81504][http-nio-8090-exec-5] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_ADMIN]]
+[2023-01-25 10:01:37:81505][http-nio-8090-exec-5] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 10:01:37:81505][http-nio-8090-exec-5] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername admin
+[2023-01-25 10:01:37:81511][http-nio-8090-exec-5] INFO  c.u.r.p.c.ProductController - [ProductController] selectProductListWithPagingForAdmin : 1
+[2023-01-25 10:01:37:81511][http-nio-8090-exec-5] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal Start ===================================
+[2023-01-25 10:01:37:81515][http-nio-8090-exec-5] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal End ===================================
+[2023-01-25 10:01:37:81515][http-nio-8090-exec-5] INFO  c.u.r.p.c.ProductController - [ProductController] selectCriteria : SelectCriteria [pageNo=1, totalCount=21, limit=10, buttonAmount=5, maxPage=3, startPage=1, endPage=3, startRow=1, endRow=10]
+[2023-01-25 10:01:37:81515][http-nio-8090-exec-5] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin Start ===================================
+[2023-01-25 10:01:37:81521][http-nio-8090-exec-5] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin End ===================================
+[2023-01-25 13:29:04:12527984][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 13:29:04:12527989][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 13:29:07:477][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:29:07:477][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:29:07:503][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 13:29:07:505][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 13:29:07:505][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 13:29:07:1249][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:29:07:1254][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:07:1254][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:29:07:1255][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:29:08:1318][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:29:08:1319][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 813 ms
+[2023-01-25 13:29:08:1649][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c695913, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4585628a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5193137f, org.springframework.security.web.header.HeaderWriterFilter@6442dae0, org.springframework.web.filter.CorsFilter@19114f8c, org.springframework.security.web.authentication.logout.LogoutFilter@64a2cbc6, com.uni.reactpro.jwt.JwtFilter@7038481b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ec85df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ac4eb2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@365f36ce, org.springframework.security.web.session.SessionManagementFilter@11c4e03, org.springframework.security.web.access.ExceptionTranslationFilter@11dab7f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f8b3f63]
+[2023-01-25 13:29:08:1654][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:29:08:1655][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:29:08:1843][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:29:08:1855][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:08:1870][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:29:08:1882][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.714 seconds (JVM running for 2.328)
+[2023-01-25 13:29:09:3287][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+[2023-01-25 13:29:10:3402][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:10:3403][Thread-1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:29:10:3408][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:10:3410][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:10:3491][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:29:10:3492][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:29:10:3813][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:29:10:3814][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:10:3815][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:29:10:3815][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:29:10:3827][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:29:10:3827][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 331 ms
+[2023-01-25 13:29:10:3903][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@395d5da7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ecb9e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c4adef, org.springframework.security.web.header.HeaderWriterFilter@2381a7bc, org.springframework.web.filter.CorsFilter@22771209, org.springframework.security.web.authentication.logout.LogoutFilter@760bb612, com.uni.reactpro.jwt.JwtFilter@5c07ae6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a43c68c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54d1323f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5623bf9c, org.springframework.security.web.session.SessionManagementFilter@698f1b94, org.springframework.security.web.access.ExceptionTranslationFilter@1ebe5aa9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33b2844d]
+[2023-01-25 13:29:10:3905][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:29:10:3905][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:29:10:3968][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:29:10:3973][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:10:3974][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:29:10:3978][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.523 seconds (JVM running for 4.424)
+[2023-01-25 13:29:10:3979][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:29:12:5385][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+[2023-01-25 13:29:12:5481][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:12:5481][Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:29:12:5483][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:12:5484][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:12:5533][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:29:12:5533][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:29:12:5747][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:29:12:5747][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:12:5747][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:29:12:5747][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:29:12:5757][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:29:12:5757][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 222 ms
+[2023-01-25 13:29:12:5828][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4418f82, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@697f36ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b356101, org.springframework.security.web.header.HeaderWriterFilter@4019e6, org.springframework.web.filter.CorsFilter@4ed933a9, org.springframework.security.web.authentication.logout.LogoutFilter@15c4b764, com.uni.reactpro.jwt.JwtFilter@786fc5c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d79d533, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1df67053, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70da78d5, org.springframework.security.web.session.SessionManagementFilter@629c5cb, org.springframework.security.web.access.ExceptionTranslationFilter@77e02b47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43feafd8]
+[2023-01-25 13:29:12:5830][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:29:12:5830][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:29:12:5886][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:29:12:5891][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:12:5893][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:29:12:5895][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.387 seconds (JVM running for 6.341)
+[2023-01-25 13:29:12:5896][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:29:20:13456][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+[2023-01-25 13:29:20:13593][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:20:13595][Thread-9] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:29:20:13596][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:20:13599][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:20:13663][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:29:20:13664][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:29:20:13903][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:29:20:13904][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:20:13904][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:29:20:13904][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:29:20:13927][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:29:20:13927][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 260 ms
+[2023-01-25 13:29:20:14017][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c3bbade, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20891ace, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e15983, org.springframework.security.web.header.HeaderWriterFilter@50c3f934, org.springframework.web.filter.CorsFilter@17571d54, org.springframework.security.web.authentication.logout.LogoutFilter@64cd2623, com.uni.reactpro.jwt.JwtFilter@77cf532d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@640655d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bc31a35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f3fa40, org.springframework.security.web.session.SessionManagementFilter@784f1475, org.springframework.security.web.access.ExceptionTranslationFilter@1a177a35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c998c27]
+[2023-01-25 13:29:20:14019][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:29:20:14020][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:29:20:14100][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:29:20:14108][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:29:20:14111][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:29:20:14115][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.484 seconds (JVM running for 14.562)
+[2023-01-25 13:29:20:14116][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:29:30:24006][http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 13:29:30:24007][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 13:29:30:24008][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 13:29:30:24020][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:29:30:24020][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:29:30:24076][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:29:30:24076][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:29:45:38372][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:29:45:38373][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:29:45:38420][http-nio-8090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 13:29:45:38547][http-nio-8090-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 13:29:45:38554][http-nio-8090-exec-4] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:29:45:38554][http-nio-8090-exec-4] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='user', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:29:45:38701][http-nio-8090-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.uni.reactpro.exception.LoginFailedException: 잘못된 아이디 또는 비밀번호입니다]
+[2023-01-25 13:29:50:44182][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:29:50:44183][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:29:50:44184][http-nio-8090-exec-6] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:29:50:44184][http-nio-8090-exec-6] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='user01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:29:50:44186][http-nio-8090-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.uni.reactpro.exception.LoginFailedException: 잘못된 아이디 또는 비밀번호입니다]
+[2023-01-25 13:29:55:49253][http-nio-8090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:29:55:49253][http-nio-8090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:29:55:49255][http-nio-8090-exec-8] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:29:55:49256][http-nio-8090-exec-8] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='test01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:29:56:49333][http-nio-8090-exec-8] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 13:29:56:49333][http-nio-8090-exec-8] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_USER
+[2023-01-25 13:29:56:49349][http-nio-8090-exec-8] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='오지라퍼', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjI3OTZ9.ha4s3fd-QtuH718HFz3FC8esyJpwQS28kI_SEQOjoMsEH4m8koMgsJMANR_j7aWnreQN82VsLEmEC9wtfIgxQg', accessTokenExpiresIn=1674622796040}
+[2023-01-25 13:29:56:49352][http-nio-8090-exec-8] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 13:30:18:71541][http-nio-8090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:30:18:71541][http-nio-8090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjI3OTZ9.ha4s3fd-QtuH718HFz3FC8esyJpwQS28kI_SEQOjoMsEH4m8koMgsJMANR_j7aWnreQN82VsLEmEC9wtfIgxQg
+[2023-01-25 13:30:18:71559][http-nio-8090-exec-9] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 13:30:18:71560][http-nio-8090-exec-9] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 13:30:18:71561][http-nio-8090-exec-9] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 13:30:18:71571][http-nio-8090-exec-9] INFO  c.u.r.p.c.ProductController - [ProductController] selectProductListWithPagingForAdmin : 1
+[2023-01-25 13:30:18:71574][http-nio-8090-exec-9] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal Start ===================================
+[2023-01-25 13:30:18:71575][http-nio-8090-exec-9] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal End ===================================
+[2023-01-25 13:30:18:71583][http-nio-8090-exec-9] INFO  c.u.r.p.c.ProductController - [ProductController] selectCriteria : SelectCriteria [pageNo=1, totalCount=21, limit=10, buttonAmount=5, maxPage=3, startPage=1, endPage=3, startRow=1, endRow=10]
+[2023-01-25 13:30:18:71583][http-nio-8090-exec-9] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin Start ===================================
+[2023-01-25 13:30:18:71589][http-nio-8090-exec-9] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin End ===================================
+[2023-01-25 13:30:44:97507][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-01-25 13:30:44:97641][Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:44:97641][Thread-13] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:30:44:97642][Thread-13] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-01-25 13:30:44:97645][Thread-13] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:259)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:241)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:346)
+[2023-01-25 13:30:44:97645][Thread-13] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/java.lang.Object.wait(Native Method)
+ java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+[2023-01-25 13:30:44:97646][Thread-13] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [OJDBC-WORKER-THREAD-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+[2023-01-25 13:30:44:97647][Thread-13] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+[2023-01-25 13:30:44:97647][Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:44:97649][Thread-13] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:44:97651][Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 13:30:44:97660][Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 13:30:44:97737][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:30:44:97737][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:30:44:98068][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:30:44:98069][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:44:98069][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:30:44:98069][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:30:44:98096][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:30:44:98096][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 357 ms
+[2023-01-25 13:30:44:98180][restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\edu\restapi\02_jwtpro\build\classes\java\main\com\uni\reactpro\member\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authService' defined in file [C:\edu\restapi\02_jwtpro\build\classes\java\main\com\uni\reactpro\member\service\AuthService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2023-01-25 13:30:44:98181][restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:30:44:98188][restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2023-01-25 13:30:44:98213][restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.uni.reactpro.member.service.AuthService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+[2023-01-25 13:30:46:100077][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 8548 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:30:46:100077][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:30:46:100269][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:30:46:100270][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:46:100270][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:30:46:100270][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:30:46:100279][restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:30:46:100279][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 200 ms
+[2023-01-25 13:30:47:100357][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e8bafec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37fac2df, org.springframework.security.web.context.SecurityContextPersistenceFilter@55bf4bc6, org.springframework.security.web.header.HeaderWriterFilter@5c7e5569, org.springframework.web.filter.CorsFilter@14124278, org.springframework.security.web.authentication.logout.LogoutFilter@12cd2468, com.uni.reactpro.jwt.JwtFilter@3cfb1153, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cabceee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d0170f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f2c3def, org.springframework.security.web.session.SessionManagementFilter@6dfe4646, org.springframework.security.web.access.ExceptionTranslationFilter@49baadd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e84d8b9]
+[2023-01-25 13:30:47:100360][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:30:47:100360][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:30:47:100435][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:30:47:100440][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:47:100442][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:30:47:100445][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.393 seconds (JVM running for 100.891)
+[2023-01-25 13:30:47:100446][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:30:56:439][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 16592 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:30:56:439][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:30:56:464][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 13:30:56:466][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 13:30:56:466][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 13:30:57:1279][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:30:57:1285][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:57:1286][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:30:57:1286][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:30:57:1339][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:30:57:1339][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 873 ms
+[2023-01-25 13:30:58:1697][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7feca111, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@312080f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c02233a, org.springframework.security.web.header.HeaderWriterFilter@a824dc7, org.springframework.web.filter.CorsFilter@5c6f97, org.springframework.security.web.authentication.logout.LogoutFilter@a449d32, com.uni.reactpro.jwt.JwtFilter@1f5869e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19048aef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39f8c1fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@526b73b, org.springframework.security.web.session.SessionManagementFilter@705c4f8, org.springframework.security.web.access.ExceptionTranslationFilter@9daf64c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d693e93]
+[2023-01-25 13:30:58:1707][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:30:58:1707][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:30:58:1956][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:30:58:1976][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:58:1994][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:30:58:2006][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.869 seconds (JVM running for 2.419)
+[2023-01-25 13:30:59:3398][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+[2023-01-25 13:30:59:3506][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:59:3506][Thread-1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:30:59:3512][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:30:59:3513][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:00:3580][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 16592 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:31:00:3580][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:31:00:3798][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:31:00:3799][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:00:3799][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:31:00:3799][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:31:00:3819][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:31:00:3819][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 237 ms
+[2023-01-25 13:31:00:3894][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@671ee7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b69a863, org.springframework.security.web.context.SecurityContextPersistenceFilter@55f09255, org.springframework.security.web.header.HeaderWriterFilter@71329506, org.springframework.web.filter.CorsFilter@689e4362, org.springframework.security.web.authentication.logout.LogoutFilter@5942a4c, com.uni.reactpro.jwt.JwtFilter@77a7604, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb95484, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ac67ad0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e714aaf, org.springframework.security.web.session.SessionManagementFilter@7f9828ff, org.springframework.security.web.access.ExceptionTranslationFilter@c6adf30, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63919356]
+[2023-01-25 13:31:00:3897][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:31:00:3897][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:31:00:3952][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:31:00:3957][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:00:3959][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:31:00:3961][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.411 seconds (JVM running for 4.375)
+[2023-01-25 13:31:00:3963][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:31:06:10507][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (0 additions, 32 deletions, 0 modifications)
+[2023-01-25 13:31:07:10621][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:07:10622][Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:31:07:10624][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:07:10627][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:07:10693][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 16592 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:31:07:10693][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:31:07:10944][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:31:07:10944][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:07:10944][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:31:07:10945][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:31:07:10970][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:31:07:10970][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 276 ms
+[2023-01-25 13:31:07:11079][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75164792, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ff5246b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d9732e9, org.springframework.security.web.header.HeaderWriterFilter@7cbb96cb, org.springframework.web.filter.CorsFilter@57a41690, org.springframework.security.web.authentication.logout.LogoutFilter@310cc9f4, com.uni.reactpro.jwt.JwtFilter@7ea56bce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e1faf54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e326f92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3948995f, org.springframework.security.web.session.SessionManagementFilter@3b561cee, org.springframework.security.web.access.ExceptionTranslationFilter@35a2c13e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1697f7f5]
+[2023-01-25 13:31:07:11085][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:31:07:11086][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:31:07:11229][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:31:07:11249][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:07:11252][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:31:07:11258][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.595 seconds (JVM running for 11.67)
+[2023-01-25 13:31:07:11259][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:31:09:12669][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (32 additions, 0 deletions, 0 modifications)
+[2023-01-25 13:31:09:12772][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:09:12772][Thread-9] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:31:09:12776][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:09:12778][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:09:12838][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 16592 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:31:09:12838][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:31:09:13055][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:31:09:13055][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:09:13055][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:31:09:13055][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:31:09:13064][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:31:09:13064][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 225 ms
+[2023-01-25 13:31:09:13147][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a7d6d73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a4b088f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb01aeb, org.springframework.security.web.header.HeaderWriterFilter@7432d8ef, org.springframework.web.filter.CorsFilter@2cc659a5, org.springframework.security.web.authentication.logout.LogoutFilter@52aea066, com.uni.reactpro.jwt.JwtFilter@7a2a9d6a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c6ccc89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6efb884b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b7d61a9, org.springframework.security.web.session.SessionManagementFilter@4a753f76, org.springframework.security.web.access.ExceptionTranslationFilter@3c1de246, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ae79bac]
+[2023-01-25 13:31:09:13149][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:31:09:13149][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:31:09:13211][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:31:09:13218][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:31:09:13221][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:31:09:13225][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.414 seconds (JVM running for 13.638)
+[2023-01-25 13:31:09:13226][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:31:12:16517][http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 13:31:12:16518][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 13:31:12:16520][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2023-01-25 13:31:12:16535][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:31:12:16536][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:31:13:16620][http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 13:31:13:16760][http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 13:31:13:16769][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:31:13:16770][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='test01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:31:13:16970][http-nio-8090-exec-2] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 13:31:13:16971][http-nio-8090-exec-2] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_USER
+[2023-01-25 13:31:13:17001][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='오지라퍼', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjI4NzN9.CtaHtIBARy3lTFDSF1s0UVTAlu52EFOeN7qZhWWG9bNphp82Xd7nQxC1nsmW0ZO8ZxXMAKOMeAuYx89xBQh_bg', accessTokenExpiresIn=1674622873409}
+[2023-01-25 13:31:13:17004][http-nio-8090-exec-2] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 13:31:33:36849][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:31:33:36849][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjI4NzN9.CtaHtIBARy3lTFDSF1s0UVTAlu52EFOeN7qZhWWG9bNphp82Xd7nQxC1nsmW0ZO8ZxXMAKOMeAuYx89xBQh_bg
+[2023-01-25 13:31:33:36864][http-nio-8090-exec-3] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 13:31:33:36865][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 13:31:33:36865][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 13:31:33:36875][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectProductListWithPagingForAdmin : 1
+[2023-01-25 13:31:33:36877][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal Start ===================================
+[2023-01-25 13:31:33:36879][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal End ===================================
+[2023-01-25 13:31:33:36886][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectCriteria : SelectCriteria [pageNo=1, totalCount=21, limit=10, buttonAmount=5, maxPage=3, startPage=1, endPage=3, startRow=1, endRow=10]
+[2023-01-25 13:31:33:36886][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin Start ===================================
+[2023-01-25 13:31:33:36893][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin End ===================================
+[2023-01-25 13:33:36:159634][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 13:33:36:159638][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 13:33:38:438][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 10888 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:33:38:439][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:33:38:463][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 13:33:38:465][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 13:33:38:465][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 13:33:39:1214][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:33:39:1220][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:39:1220][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:33:39:1221][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:33:39:1271][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:33:39:1271][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 805 ms
+[2023-01-25 13:33:39:1652][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b312a59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f1a8774, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bd9966c, org.springframework.security.web.header.HeaderWriterFilter@31027295, org.springframework.web.filter.CorsFilter@1dfa12f6, org.springframework.security.web.authentication.logout.LogoutFilter@37ca231e, com.uni.reactpro.jwt.JwtFilter@2f3b9ede, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40744942, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12b678ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d4a1a82, org.springframework.security.web.session.SessionManagementFilter@3e19bce, org.springframework.security.web.access.ExceptionTranslationFilter@53fdc864, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a971077]
+[2023-01-25 13:33:39:1659][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:33:39:1659][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:33:39:1890][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:33:39:1903][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:39:1916][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:33:39:1926][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.782 seconds (JVM running for 2.346)
+[2023-01-25 13:33:41:3332][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+[2023-01-25 13:33:41:3434][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:41:3434][Thread-1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:33:41:3440][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:41:3442][Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:41:3510][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 10888 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:33:41:3510][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:33:41:3786][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:33:41:3787][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:41:3787][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:33:41:3787][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:33:41:3808][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:33:41:3809][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 296 ms
+[2023-01-25 13:33:41:3886][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74e8ab43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@147fa2a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@ea89c6a, org.springframework.security.web.header.HeaderWriterFilter@111946b8, org.springframework.web.filter.CorsFilter@9e60716, org.springframework.security.web.authentication.logout.LogoutFilter@2ae27315, com.uni.reactpro.jwt.JwtFilter@2c807795, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d9f7bcf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4668d242, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d0363f5, org.springframework.security.web.session.SessionManagementFilter@194f73f, org.springframework.security.web.access.ExceptionTranslationFilter@39b54222, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b17ca9d]
+[2023-01-25 13:33:41:3887][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:33:41:3887][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:33:41:3945][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:33:41:3950][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:41:3952][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:33:41:3955][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.473 seconds (JVM running for 4.375)
+[2023-01-25 13:33:41:3957][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:33:47:9266][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+[2023-01-25 13:33:47:9370][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:47:9372][Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:33:47:9374][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:47:9376][Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:47:9436][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 10888 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:33:47:9436][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:33:47:9765][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:33:47:9765][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:47:9766][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:33:47:9766][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:33:47:9779][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:33:47:9779][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 341 ms
+[2023-01-25 13:33:47:9865][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7134211d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76b60fad, org.springframework.security.web.context.SecurityContextPersistenceFilter@20d58af9, org.springframework.security.web.header.HeaderWriterFilter@21466d6b, org.springframework.web.filter.CorsFilter@1d41a313, org.springframework.security.web.authentication.logout.LogoutFilter@19a4185, com.uni.reactpro.jwt.JwtFilter@5e0f4ce8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8428a3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1afd936d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e63b2fd, org.springframework.security.web.session.SessionManagementFilter@5088fed0, org.springframework.security.web.access.ExceptionTranslationFilter@2da0b3f3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@408071b2]
+[2023-01-25 13:33:47:9866][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:33:47:9867][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:33:47:9927][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:33:47:9932][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:33:47:9935][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:33:47:9939][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.532 seconds (JVM running for 10.358)
+[2023-01-25 13:33:47:9940][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:33:49:11283][http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 13:33:49:11285][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 13:33:49:11286][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 13:33:49:11300][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:33:49:11301][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:33:49:11393][http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 13:33:49:11579][http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 13:33:49:11586][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:33:49:11587][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='test01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:33:49:11843][http-nio-8090-exec-1] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 13:33:49:11843][http-nio-8090-exec-1] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_USER
+[2023-01-25 13:33:49:11875][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='오지라퍼', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjMwMjl9.YmYlSFyur0h7iZckz4g9lPexWqpo6aXXqQJtSaeilngMyIC4-bW8HAUEnB_ddXKvGqbKpmN34gH8qC59kaZ4bw', accessTokenExpiresIn=1674623029871}
+[2023-01-25 13:33:49:11879][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 13:34:03:25520][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:34:03:25521][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjMwMjl9.YmYlSFyur0h7iZckz4g9lPexWqpo6aXXqQJtSaeilngMyIC4-bW8HAUEnB_ddXKvGqbKpmN34gH8qC59kaZ4bw
+[2023-01-25 13:34:03:25535][http-nio-8090-exec-3] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 13:34:03:25537][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 13:34:03:25537][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 13:34:03:25545][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectProductListWithPagingForAdmin : 1
+[2023-01-25 13:34:03:25549][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal Start ===================================
+[2023-01-25 13:34:03:25551][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductTotal End ===================================
+[2023-01-25 13:34:03:25556][http-nio-8090-exec-3] INFO  c.u.r.p.c.ProductController - [ProductController] selectCriteria : SelectCriteria [pageNo=1, totalCount=21, limit=10, buttonAmount=5, maxPage=3, startPage=1, endPage=3, startRow=1, endRow=10]
+[2023-01-25 13:34:03:25557][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin Start ===================================
+[2023-01-25 13:34:03:25564][http-nio-8090-exec-3] INFO  c.u.r.p.service.ProductService - [ProductService] selectProductListWithPagingForAdmin End ===================================
+[2023-01-25 13:34:30:52554][File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-01-25 13:34:30:52663][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:30:52664][Thread-9] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-25 13:34:30:52664][Thread-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-01-25 13:34:30:52667][Thread-9] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:259)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:241)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:346)
+[2023-01-25 13:34:30:52667][Thread-9] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/java.lang.Object.wait(Native Method)
+ java.base@11.0.2/java.util.TimerThread.mainLoop(Timer.java:553)
+ java.base@11.0.2/java.util.TimerThread.run(Timer.java:506)
+[2023-01-25 13:34:30:52667][Thread-9] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [OJDBC-WORKER-THREAD-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+ java.base@11.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+[2023-01-25 13:34:30:52668][Thread-9] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.2/java.lang.Thread.run(Thread.java:834)
+[2023-01-25 13:34:30:52668][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:30:52670][Thread-9] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:30:52671][Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 13:34:30:52677][Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 13:34:30:52746][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 10888 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:34:30:52746][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:34:30:52947][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:34:30:52947][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:30:52948][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:34:30:52948][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:34:30:52969][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 221 ms
+[2023-01-25 13:34:31:53047][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ff0c5e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35dfecf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c137715, org.springframework.security.web.header.HeaderWriterFilter@59a4484f, org.springframework.web.filter.CorsFilter@2a5f587b, org.springframework.security.web.authentication.logout.LogoutFilter@32c87bec, com.uni.reactpro.jwt.JwtFilter@26316cb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f88793e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3415b6b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fd509d0, org.springframework.security.web.session.SessionManagementFilter@2baf4be1, org.springframework.security.web.access.ExceptionTranslationFilter@2e65afb6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b38fb47]
+[2023-01-25 13:34:31:53048][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:34:31:53048][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:34:31:53098][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:34:31:53105][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:34:31:53108][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 0.393 seconds (JVM running for 53.527)
+[2023-01-25 13:34:31:53108][restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[2023-01-25 13:34:33:433][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 10224 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 13:34:33:434][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 13:34:33:459][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 13:34:33:461][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 13:34:33:461][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 13:34:34:1257][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 13:34:34:1264][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:34:1264][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 13:34:34:1264][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 13:34:34:1339][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 13:34:34:1339][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 878 ms
+[2023-01-25 13:34:35:1708][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79e70f10, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4da06dcd, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e623942, org.springframework.security.web.header.HeaderWriterFilter@6b39f6a4, org.springframework.web.filter.CorsFilter@6f72a5bc, org.springframework.security.web.authentication.logout.LogoutFilter@197a5536, com.uni.reactpro.jwt.JwtFilter@2d8d00b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b541236, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@331e0f29, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cd3159d, org.springframework.security.web.session.SessionManagementFilter@2fd286a6, org.springframework.security.web.access.ExceptionTranslationFilter@2b50c235, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@531b13ad]
+[2023-01-25 13:34:35:1713][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 13:34:35:1714][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 13:34:35:1919][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 13:34:35:1935][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 13:34:35:1951][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 13:34:35:1960][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.825 seconds (JVM running for 2.375)
+[2023-01-25 13:34:57:24400][http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 13:34:57:24400][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 13:34:57:24401][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 13:34:57:24413][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:34:57:24413][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 13:34:57:24485][http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 13:34:58:24620][http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 13:34:58:24631][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 13:34:58:24631][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='test01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 13:34:58:24845][http-nio-8090-exec-1] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 13:34:58:24846][http-nio-8090-exec-1] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_USER
+[2023-01-25 13:34:58:24869][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='오지라퍼', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjMwOTh9.pezR52cvm3VLWdG_qArRL_hMJ3mTM4qC01tp1L7_AaUrQ5koGelIuAd2T_bOvocJ9nFilBJB0dkrLZisKm7BOQ', accessTokenExpiresIn=1674623098360}
+[2023-01-25 13:34:58:24874][http-nio-8090-exec-1] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 13:35:21:47628][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 13:35:21:47629][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2MjMwOTh9.pezR52cvm3VLWdG_qArRL_hMJ3mTM4qC01tp1L7_AaUrQ5koGelIuAd2T_bOvocJ9nFilBJB0dkrLZisKm7BOQ
+[2023-01-25 13:35:21:47646][http-nio-8090-exec-3] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 13:35:21:47647][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 13:35:21:47647][http-nio-8090-exec-3] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 15:16:50:6136774][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 15:16:50:6136786][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 15:16:53:566][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 16756 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 15:16:53:567][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 15:16:53:600][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 15:16:53:600][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 15:16:53:600][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 15:16:54:1367][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 15:16:54:1372][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 15:16:54:1373][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 15:16:54:1373][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 15:16:54:1445][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 15:16:54:1445][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 845 ms
+[2023-01-25 15:16:54:1804][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c663191, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22e4ef92, org.springframework.security.web.context.SecurityContextPersistenceFilter@75129a71, org.springframework.security.web.header.HeaderWriterFilter@152c858, org.springframework.web.filter.CorsFilter@6f7d5fe9, org.springframework.security.web.authentication.logout.LogoutFilter@47cc269, com.uni.reactpro.jwt.JwtFilter@799611dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e14d017, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7729e959, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24215dc7, org.springframework.security.web.session.SessionManagementFilter@5beec377, org.springframework.security.web.access.ExceptionTranslationFilter@6197d77a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2450c0e7]
+[2023-01-25 15:16:54:1807][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 15:16:54:1807][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 15:16:54:2044][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 15:16:54:2063][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 15:16:54:2077][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 15:16:54:2089][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.901 seconds (JVM running for 3.248)
+[2023-01-25 15:17:16:24156][http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 15:17:16:24157][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 15:17:16:24158][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2023-01-25 15:17:16:24168][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:17:16:24168][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:17:49:56593][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:17:49:56593][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:21:23:271197][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:21:23:271198][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:21:36:434][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 14928 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 15:21:36:436][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 15:21:36:460][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 15:21:36:462][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 15:21:36:463][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 15:21:36:1197][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 15:21:36:1203][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 15:21:36:1203][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 15:21:36:1204][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 15:21:36:1277][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 15:21:36:1277][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 814 ms
+[2023-01-25 15:21:37:1593][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22e608d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20c01089, org.springframework.security.web.context.SecurityContextPersistenceFilter@4324e1aa, org.springframework.security.web.header.HeaderWriterFilter@74fba0b, org.springframework.web.filter.CorsFilter@49cd7324, org.springframework.security.web.authentication.logout.LogoutFilter@22a23a98, com.uni.reactpro.jwt.JwtFilter@67e3d225, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6512b86e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36ca3f5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7551f681, org.springframework.security.web.session.SessionManagementFilter@10d692d1, org.springframework.security.web.access.ExceptionTranslationFilter@1c10d416, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7856ec9c]
+[2023-01-25 15:21:37:1594][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 15:21:37:1594][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 15:21:37:1834][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 15:21:37:1846][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 15:21:37:1859][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 15:21:37:1868][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.724 seconds (JVM running for 2.297)
+[2023-01-25 15:21:43:7849][http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 15:21:43:7850][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 15:21:43:7851][http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 15:21:43:7863][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:21:43:7863][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:22:05:29834][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:22:05:29835][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:22:05:29875][http-nio-8090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-25 15:22:05:30025][http-nio-8090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-25 15:22:05:30033][http-nio-8090-exec-3] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 15:22:05:30034][http-nio-8090-exec-3] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='test01', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 15:22:05:30258][http-nio-8090-exec-3] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 15:22:05:30258][http-nio-8090-exec-3] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_USER
+[2023-01-25 15:22:05:30274][http-nio-8090-exec-3] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='오지라퍼', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2Mjk1MjV9.C88qDOO8JoeKgy9qsTTlcOQWkoGg6AlG07OeK41JUS1cvYYAWdjA23pB9OnZVupi26N3bjnBPmWKUEj6ESfg_Q', accessTokenExpiresIn=1674629525902}
+[2023-01-25 15:22:05:30279][http-nio-8090-exec-3] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 15:22:17:42194][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:22:17:42194][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:24:57:202293][http-nio-8090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:24:57:202293][http-nio-8090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2Mjk1MjV9.C88qDOO8JoeKgy9qsTTlcOQWkoGg6AlG07OeK41JUS1cvYYAWdjA23pB9OnZVupi26N3bjnBPmWKUEj6ESfg_Q
+[2023-01-25 15:24:57:202311][http-nio-8090-exec-7] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 15:24:57:202313][http-nio-8090-exec-7] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 15:24:57:202313][http-nio-8090-exec-7] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 15:26:00:265091][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:26:00:265091][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MDEiLCJhdXRoIjpbIlJPTEVfVVNFUiJdLCJleHAiOjE2NzQ2Mjk1MjV9.C88qDOO8JoeKgy9qsTTlcOQWkoGg6AlG07OeK41JUS1cvYYAWdjA23pB9OnZVupi26N3bjnBPmWKUEj6ESfg_Q
+[2023-01-25 15:26:00:265096][http-nio-8090-exec-10] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] authorities : [[ROLE_USER]]
+[2023-01-25 15:26:00:265103][http-nio-8090-exec-10] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] ===================================
+[2023-01-25 15:26:00:265104][http-nio-8090-exec-10] INFO  c.u.r.m.s.CustomUserDetailsService - [CustomUserDetailsService] loadUserByUsername test01
+[2023-01-25 15:26:00:265113][http-nio-8090-exec-10] INFO  c.u.r.p.service.ProductService - [ProductService] selectProduct Start ===================================
+[2023-01-25 15:26:00:265118][http-nio-8090-exec-10] INFO  c.u.r.p.service.ProductService - [ProductService] selectProduct End ===================================
+[2023-01-25 15:59:19:2264170][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:59:19:2264171][http-nio-8090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:59:19:2264174][http-nio-8090-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 15:59:51:2296040][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 15:59:51:2296041][http-nio-8090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 15:59:51:2296042][http-nio-8090-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:03:14:2498790][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:14:2498790][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:14:2498791][http-nio-8090-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:03:15:2500054][http-nio-8090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:15:2500055][http-nio-8090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:15:2500055][http-nio-8090-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:03:16:2500671][http-nio-8090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:16:2500671][http-nio-8090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:16:2500672][http-nio-8090-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:03:21:2505756][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:21:2505757][http-nio-8090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:21:2505763][http-nio-8090-exec-10] INFO  c.u.r.member.service.AuthService - [AuthService] Login Start ===================================
+[2023-01-25 16:03:21:2505763][http-nio-8090-exec-10] INFO  c.u.r.member.service.AuthService - [AuthService] MemberDto{memberCode=null, memberId='admin', memberPassword='1234', memberName='null', memberEmail='null', memberRole='null', authorities=null}
+[2023-01-25 16:03:21:2505842][http-nio-8090-exec-10] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] generateTokenDto Start ===================================
+[2023-01-25 16:03:21:2505842][http-nio-8090-exec-10] INFO  com.uni.reactpro.jwt.TokenProvider - [TokenProvider] ROLE_ADMIN
+[2023-01-25 16:03:21:2505844][http-nio-8090-exec-10] INFO  c.u.r.member.service.AuthService - [AuthService] tokenDto TokenDto{grantType='bearer', memberName='관리자', accessToken='eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlsiUk9MRV9BRE1JTiJdLCJleHAiOjE2NzQ2MzIwMDF9.2pCq79ayI8rHFOX2lwKTuVZoTR0_igDXmFkWdSFg3Pij97bjdo_fyJB0FUnBIM-SwJvO9mwS4fDNfd555gtpbA', accessTokenExpiresIn=1674632001484}
+[2023-01-25 16:03:21:2505846][http-nio-8090-exec-10] INFO  c.u.r.member.service.AuthService - [AuthService] Login End ===================================
+[2023-01-25 16:03:32:2516501][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:32:2516501][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:32:2516502][http-nio-8090-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:03:32:2517218][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:03:32:2517219][http-nio-8090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:03:32:2517219][http-nio-8090-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:04:35:2580012][http-nio-8090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:04:35:2580013][http-nio-8090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:04:35:2580013][http-nio-8090-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:04:36:2581097][http-nio-8090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:04:36:2581098][http-nio-8090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:04:36:2581099][http-nio-8090-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 16:04:37:2581444][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 16:04:37:2581444][http-nio-8090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null
+[2023-01-25 16:04:37:2581444][http-nio-8090-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+[2023-01-25 19:08:27:13612324][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-25 19:08:27:13612330][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-25 19:08:30:462][restartedMain] INFO  com.uni.reactpro.Application - Starting Application using Java 11.0.2 on DESKTOP-SIG7LQ4 with PID 2780 (C:\edu\restapi\02_jwtpro\build\classes\java\main started by MSI in C:\edu\restapi\02_jwtpro)
+[2023-01-25 19:08:30:463][restartedMain] INFO  com.uni.reactpro.Application - No active profile set, falling back to 1 default profile: "default"
+[2023-01-25 19:08:30:489][restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\MSI\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/MSI/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+[2023-01-25 19:08:30:491][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-25 19:08:30:491][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-25 19:08:30:1207][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2023-01-25 19:08:30:1213][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2023-01-25 19:08:30:1213][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-25 19:08:30:1213][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+[2023-01-25 19:08:30:1273][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-25 19:08:30:1274][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 782 ms
+[2023-01-25 19:08:31:1596][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a6ed111, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5947bd8e, org.springframework.security.web.context.SecurityContextPersistenceFilter@147fafc4, org.springframework.security.web.header.HeaderWriterFilter@d5094a7, org.springframework.web.filter.CorsFilter@5d38401a, org.springframework.security.web.authentication.logout.LogoutFilter@5cfa6f89, com.uni.reactpro.jwt.JwtFilter@1b16c95e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f6cd9ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@150f418b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27cc7574, org.springframework.security.web.session.SessionManagementFilter@7a521481, org.springframework.security.web.access.ExceptionTranslationFilter@66d2c695, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6562d496]
+[2023-01-25 19:08:31:1599][restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/productimgs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[2023-01-25 19:08:31:1599][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will not secure Ant [pattern='/productimgs/**']
+[2023-01-25 19:08:31:1788][restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[2023-01-25 19:08:31:1799][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2023-01-25 19:08:31:1812][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2023-01-25 19:08:31:1822][restartedMain] INFO  com.uni.reactpro.Application - Started Application in 1.662 seconds (JVM running for 2.305)
+[2023-01-25 19:09:21:52142][http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-25 19:09:21:52143][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-25 19:09:21:52145][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-25 19:09:21:52158][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] doFilterInternal START ===================================
+[2023-01-25 19:09:21:52158][http-nio-8090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - [JwtFilter] jwt : null

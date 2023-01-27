@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.reactpro.art.dao.ArtMapper">
+
+    <select id="selectArt" resultType="ArtDTO">
+        SELECT
+            *
+        FROM TBL_ART
+        WHERE ART_NO = #{artNo}
+    </select>
+
+    <update id="updateArt" parameterType="ArtDTO">
+        UPDATE TBL_ART
+        SET
+            ART_NAME = #{artName},
+            AUTHOR_NAME = #{authorName},
+            ART_DESCRIPTION = #{artDescription},
+            ART_PLACE = #{artPlace},
+            ART_AGE = #{artAge},
+            ART_IMAGE_URL = #{artImageUrl},
+            ART_MOVEMENT = #{artMovement},
+            ART_YEAR = #{artYear}
+
+        WHERE ART_NO = #{artNo}
+    </update>
+
+    <select id="selectArtTotal" resultType="int">
+        SELECT
+            count(*)
+        FROM TBL_ART
+        WHERE ART_AGE = #{artAge}
+
+    </select>
+<!--    &#45;&#45;        -->
+
+
+    <select id="selectArtListWithPaging" resultType="ArtDTO">
+        <![CDATA[
+
+        SELECT
+            *
+        FROM(
+                SELECT
+                    ROWNUM AS RN
+                     , P.*
+                FROM (
+                         SELECT
+                             TP.*
+                         FROM TBL_ART TP
+                         WHERE ART_AGE = #{artAge}
+                         ORDER BY TP.ART_NO DESC
+                     ) P
+            )
+        WHERE RN <= #{ endRow }
+          AND RN >= #{ startRow }
+        ]]>
+    </select>
+<!--    -->
+<!--    SELECT-->
+<!--    *-->
+<!--    FROM TBL_ART-->
+<!--    WHERE ART_NO = #{artNo}-->
+<!--    AND ART_AGE = 'modern'-->
+<!--    ORDER BY ART_NO DESC-->
+
+
+
+
+    <insert id="insertArt" parameterType="ArtDTO">
+        INSERT INTO TBL_ART
+        (
+            ART_NO,
+            ART_NAME,
+            AUTHOR_NAME,
+            ART_DESCRIPTION,
+            ART_PLACE,
+            ART_AGE,
+            ART_IMAGE_URL,
+            ART_MOVEMENT,
+            ART_YEAR
+
+        )
+        VALUES
+            (
+                SEQ_ART_NO.NEXTVAL,
+                #{artName},
+                #{authorName},
+                #{artDescription},
+                #{artPlace},
+                #{artAge},
+                #{artImageUrl},
+                #{artMovement},
+                #{artYear}
+
+
+            )
+    </insert>
+    <delete id="deleteArt">
+        DELETE
+        FROM TBL_ART
+        WHERE ART_NO = #{artNo}
+
+    </delete>
+
+</mapper>
